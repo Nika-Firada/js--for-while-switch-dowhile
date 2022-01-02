@@ -48,3 +48,17 @@ for(let i = 0; i < 10000; i++){
     emptyArray.push(counter);
 }
 console.log(emptyArray);
+
+//დამატებითი დავალება
+let myArray = [10, 9, 9, 8, 8, 11, 8, 0, 9, 1];
+let biggest = myArray[0];
+let nextbiggest = myArray[0];
+    for(let i=0;i < myArray.length; i++){
+        if(myArray[i] > biggest){
+            nextbiggest = biggest;
+            biggest = myArray[i];
+        }
+        else if(myArray[i] > nextbiggest && myArray[i] != biggest)
+            nextbiggest = myArray[i];
+    }
+    console.log(nextbiggest);
